@@ -1,0 +1,107 @@
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  #menubar {
+    width: 190px;
+    background-color: white;
+    padding: 10px;
+  }
+  body {
+    font-family: Arial;
+    unicode-bidi: isolate;
+    background-color: #d14836;
+    line-height: 20px;
+  }
+
+  .wrapper {
+    position: relative;
+    overflow: auto;
+  }
+  #top h1 {
+    margin: 0;
+    line-height: 50px;
+  }
+  #top {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  #menulist {
+    padding: 0;
+    font: 16px verdana;
+    list-style-type: none;
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+  }
+
+  .menuitem {
+    width: 155px;
+    background-color: #d14836;
+    border: 1px solid #d14836;
+    border-radius: 40px;
+    color: white;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menuitem.active {
+    background-color: white;
+    color: #d14836;
+    font-weight: bold;
+  }
+  .menuitem:hover {
+    background-color: white;
+    color: #d14836;
+    border: 1px solid #d14836;
+  }
+  .menuitem a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .menuitem:nth-child(2) {
+    background-color: white;
+    color: #d14836;
+    font-weight: bold;
+  }
+  #main {
+    padding: 20px;
+    background-color: #ffffff;
+    font: 80% Verdana;
+  }
+  #main h1 {
+    color: #d14836;
+  }
+  #main a {
+    color: #d14836;
+    text-decoration: none;
+  }
+  #main a:hover {
+    text-decoration: underline;
+  }
+  #sidebar {
+    background-color: #f6dad7;
+    color: #d14836;
+    padding: 10px;
+  }
+  #bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    color: #ffffff;
+  }

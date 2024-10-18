@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aisyah</title>
+    <style>
+      body {
+        font: 100% Verdana;
+        line-height: 26px;
+      }
+
+      #menubar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #menulist {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        list-style-type: none; /* Remove list bullets */
+      }
+
+      .menuitem {
+        flex-grow: 1; /* Allow items to grow/shrink */
+        background-color: #555555;
+        color: white;
+        margin: 4px;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+        min-width: fit-content;
+        flex-direction: row;
+      }
+
+      .menuitem:nth-child(3) {
+        background-color: #4caf50;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #4caf50;
+      }
+
+      #main {
+        padding: 10px;
+      }
+
+      #main a {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container wrapper">
+      <div id="top">
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different Stylesheets</p>
+      </div>
+      <div class="wrapper">
+        <div id="menubar">
+          <ul id="menulist">
+            <li class="menuitem">
+              <a
+                href="/index.html"
+                style="text-decoration: none; color: inherit"
+              >
+                Stylesheet 1</a
+              >
+            </li>
+            <li class="menuitem">
+              <a
+                href="/sheet_02.html"
+                style="text-decoration: none; color: inherit"
+              >
+                Stylesheet 2</a
+              >
+            </li>
+            <li class="menuitem">
+              <a
+                href="/sheet_03.html"
+                style="text-decoration: none; color: inherit"
+              >
+                Stylesheet 3</a
+              >
+            </li>
+            <li class="menuitem">
+              <a
+                href="/sheet_04.html"
+                style="text-decoration: none; color: inherit"
+                >Stylesheet 4</a
+              >
+            </li>
+            <li class="menuitem">No Stylesheet</li>
+          </ul>
+          <br />
+        </div>
+        <div id="main">
+          <h1>Same Page Different Stylesheets</h1>
+          <p>
+            This is a demonstration of how different stylesheets can change the
+            layout of your HTML page. You can change the layout of this page by
+            selecting different stylesheets in the menu, or by selecting one of
+            the following links:
+            <br />
+            <a href="index.html">Stylesheet1</a>,
+            <a href="sheet_02.html">Stylesheet2</a>,
+            <a href="sheet_03.html">Stylesheet3</a>,
+            <a href="sheet_04.html">Stylesheet4</a>.
+          </p>
+          <h2>No Styles</h2>
+          <p>
+            This page uses DIV elements to group different sections of the HTML
+            page. Click here to see how the page looks like with no
+            stylesheet:<br />
+            <a href="#" style="color: black">No Stylesheet</a>.
+          </p>
+        </div>
+        <div
+          id="sidebar"
+          style="
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            padding-left: 10px;
+          "
+        >
+          <h3>Side-Bar</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat.
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="bottom"
+        style="
+          text-align: center;
+          padding: 10px;
+          font-size: 70%;
+          line-height: 14px;
+        "
+      >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi.
+      </div>
+    </div>
+  </body>
+</html>

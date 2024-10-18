@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aisyah</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      color: #84c754;
+      font: 100% Courier New;
+      line-height: 30px;
+      margin: 20px;
+      font-size: 20px;
+    }
+    .wrapper {
+      position: relative;
+      overflow: auto;
+    }
+    #top {
+      position: relative;
+      overflow: auto;
+    }
+    #top h1,
+    #top p {
+      margin: 0;
+    }
+    .menuitem {
+      color: #84c754;
+      cursor: pointer;
+    }
+    .menuitem a {
+      text-decoration: none;
+    }
+
+    .menuitem:hover {
+      color: white;
+    }
+
+    a:hover {
+      color: white;
+    }
+    #main {
+      padding: 10px;
+      color: #84c754;
+    }
+    #main a {
+      color: white;
+      cursor: pointer;
+    }
+    a {
+      color: #84c754;
+    }
+    .menuitem:nth-child(4) a {
+      color: #ffffff;
+    }
+
+    #main a:hover {
+      color: #84c754;
+    }
+
+    .sidebar {
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 4px;
+      padding: 10px;
+      width: 420px;
+      top: 0;
+      right: 0;
+      position: absolute;
+      font-size: 80%;
+      line-height: 20px;
+    }
+    #main,
+    .sidebar {
+      flex-basis: 100%; /* Both main and sidebar take full width */
+      order: 1; /* Ensures main content comes first */
+    }
+    .bottom {
+      color: white;
+      border: 1px solid white;
+      border-radius: 4px;
+      padding: 10px;
+      text-align: center;
+      font-size: 70%;
+      line-height: 14px;
+    }
+  </style>
+  <body>
+    <div class="container wrapper">
+      <div id="top">
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different Stylesheets</p>
+      </div>
+      <div class="wrapper">
+        <div id="menubar">
+          <ul id="menulist">
+            <li class="menuitem"><a href="/index.html">Stylesheet 1</a></li>
+            <li class="menuitem"><a href="/sheet_02.html">Stylesheet 2</a></li>
+            <li class="menuitem"><a href="/sheet_03.html">Stylesheet 3</a></li>
+            <li class="menuitem"><a href="/sheet_04.html">Stylesheet 4</a></li>
+            <li class="menuitem"><a href="nosheet.html">No Stylesheet</a></li>
+          </ul>
+        </div>
+        <div id="main">
+          <h1>Same Page Different Stylesheets</h1>
+          <p>
+            This is a demonstration of how different stylesheets can change the
+            layout of your HTML page. You can change the layout of this page by
+            selecting different stylesheets in the menu, or by selecting one of
+            the following links:
+
+            <br />
+            <a href="/index.html">Stylesheet 1</a>,
+            <a href="/sheet_02.html">Stylesheet 2</a>,
+            <a href="/sheet_03.html">Stylesheet 3</a>,
+            <a href="/sheet_04.html">Stylesheet 4</a>.
+          </p>
+          <h2>No Style</h2>
+          <p>
+            This page uses DIV elements to group different sections of the HTML
+            page. Click here to see how the page looks like with no stylesheet:
+            <br />
+            <a href="/nosheet.html">No Stylesheet</a>.
+          </p>
+        </div>
+        <div class="sidebar">
+          <h3>Side-Bar</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus sint
+            voluptate cupiditate, repellat assumenda iusto nulla ipsam odit enim
+            id, dolorum possimus quae fugiat earum dolore quidem fugit illum
+            animi.
+          </p>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+          vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
